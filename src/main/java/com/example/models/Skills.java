@@ -27,6 +27,8 @@ public class Skills  extends BaseEntity{
 
 	@Column(nullable = false, unique = true)
 	String skillname;
+	
+	String skill;
 
 	@ManyToMany(mappedBy = "skills")
 	List<Employee> employees;
