@@ -29,6 +29,8 @@ public class Skills  extends BaseEntity{
 	String skillname;
 	
 	String skill;
+	
+	String fieldcheck;
 
 	@ManyToMany(mappedBy = "skills")
 	List<Employee> employees;
